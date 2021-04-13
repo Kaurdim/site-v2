@@ -1,0 +1,152 @@
+@import './variables.scss';
+
+.page_one {
+  position: relative;
+  background: url('../images/page1/bg.png') right top no-repeat;
+  /* background-size: contain; */
+  /* url(/assets/images/page1/map.png) right top no-repeat; */
+
+  .page_image {
+    position: absolute;
+    z-index: -1;
+  }
+
+  .page_image.image_map {
+    top: 14%;
+    right: 24px;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .page_one_content {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: var(--space-m);
+  }
+
+  .name_sys {
+    font-size: 42px;
+    font-weight: 700;
+    color: rgb(51, 51, 51);
+    text-transform: uppercase;
+    line-height: 1.489;
+    text-align: left;
+  }
+
+  .name_sys2 {
+    font-size: 24px;
+    color: rgb(51, 51, 51);
+    line-height: 2.917;
+    text-align: left;
+    padding-top: 15px;
+  }
+
+  .line {
+    height: 20px;
+    width: 210px;
+    border-bottom: 3px solid rgb(0, 111, 184);
+    padding-top: 15px;
+    padding-bottom: 20px;
+  }
+
+  .dop_margin {
+    margin-top: 20px;
+  }
+
+  .btn_download:hover {
+    box-shadow: inset 0 0 0 5px #91d3ec;
+  }
+
+  .btn_download {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: rgb(0, 111, 184);
+    width: 330px;
+    height: 54px;
+    border-radius: 30px;
+    transition: 0.5s;
+    /* box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.6); */
+  }
+}
+
+@media screen and (max-width: $desktop-width) {
+  .page_one {
+    background-size: 93% 100%;
+
+    .name_sys {
+      font-size: 28px;
+    }
+
+    .name_sys2 {
+      padding-top: 25px;
+      font-size: 16px;
+    }
+
+    .page_image.image_map {
+      top: 25%;
+      right: -9%;
+
+      img {
+        width: 85%;
+        height: auto;
+      }
+    }
+
+    .dop_margin {
+      margin-top: 25px;
+    }
+  }
+}
+
+@media screen and (max-width: $tablet-width) {
+  .page_one {
+    .page_image.image_map {
+      top: 15%;
+      right: -10%;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .page_one_content {
+      justify-content: flex-end;
+      align-items: center;
+      padding-bottom: 100px;
+    }
+
+    .name_sys {
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: $mobile-width) {
+  .page_one {
+    background-size: 93% 100%;
+
+    .name_sys {
+      font-size: 20px;
+    }
+
+    .name_sys2 {
+      padding-top: 25px;
+      font-size: 14px;
+    }
+
+    .dop_margin {
+      margin-top: 25px;
+    }
+  }
+}
