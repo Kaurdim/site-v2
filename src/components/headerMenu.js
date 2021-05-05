@@ -9,7 +9,7 @@ export const headerMenu = () => {
   const menuItems = document.querySelectorAll(linkSelector);
 
   const showLogo = (hash) => {
-    if (hash !== '#') {
+    if (hash) {
       logo.style.display = 'none';
       return;
     }
@@ -31,7 +31,6 @@ export const headerMenu = () => {
     bugrerBtn.classList.remove('active');
     setNewHash(newHash);
     elem.classList.add(activeClass);
-    showLogo(newHash);
   };
 
   [...menuItems].forEach((item) => {
@@ -51,6 +50,11 @@ export const headerMenu = () => {
   };
 
   showLogo(defaultHash);
+
+  document.body.addEventListener('screenChanged', () => {
+    const newHash = window.location.hash;
+    showLogo(newHash);
+  });
 
   bugrerBtn.addEventListener('click', openMobileMenu);
 };

@@ -29,26 +29,20 @@ a {
 }
 
 body {
-  /* overflow: hidden; */
   font-family: 'Roboto', sans-serif;
   background-color: var(--bg-primary);
-  height: 10000px;
 }
 
 .container {
-  height: auto;
+  height: 100vh;
   width: 100%;
-  display: flex;
-  flex-direction: column;
   position: relative;
   overflow: hidden;
 }
 
 .page_container {
-  flex: 1;
   display: flex;
-  min-height: 800px;
-  height: 100vh;
+  height: 100%;
 }
 
 .content {
@@ -66,3 +60,8 @@ body {
 @import './header.scss';
 @import './main-page.scss';
 @import './video.scss';
+@import './advantages.scss';
+@import './clients.scss';
+@import './opportunities.scss';
+@import './contacts.scss';
+@import './screens.scss';

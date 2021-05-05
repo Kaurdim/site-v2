@@ -1,0 +1,11 @@
+.screen {
+  height: 100%;
+
+  &.screen--hidden {
+    display: none;
+  }
+
+  &.active {
+    display: flex;
+  }
+}

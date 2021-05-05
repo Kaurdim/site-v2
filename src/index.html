@@ -1,87 +1,641 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="gSoft — программы для автоматизации логистических и транспортных компаний">
-    <meta name="keywords" content="автоматизация, логистика, транспортные компании, программы для логистики, программы для экспедиторов, автоматизация логистики, автоматизация экспедиторов, электронное декларирование">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <title>G-Soft: автоматизация логистических и транспортных компаний</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="gSoft — программы для автоматизации логистических и транспортных компаний">
+	<meta name="keywords"
+		content="автоматизация, логистика, транспортные компании, программы для логистики, программы для экспедиторов, автоматизация логистики, автоматизация экспедиторов, электронное декларирование">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<title>G-Soft: автоматизация логистических и транспортных компаний</title>
 </head>
 
 <body>
-  <header class="header">
-    <div class="header_content">
-      <div class="header_logo">
-          <a href="#">
-              <img src="src/images/logo.png" alt="gSoft">
-          </a>
-      </div>
-      <div class="header_action">
-          <nav class="nav">
-              <ul class="nav_menu">
-                <li class="menu_item">
-                    <a class="menu_item_link" href="#">Главная</a>
-                </li>
-                  <li class="menu_item">
-                      <a class="menu_item_link" href="#page2">Видео</a>
-                  </li>
-                  <li class="menu_item">
-                      <a class="menu_item_link" href="#page3">Преимущества</a>
-                  </li>
-                  <li class="menu_item">
-                      <a class="menu_item_link" href="#page4">Возможности</a>
-                  </li>
-                  <li class="menu_item">
-                      <a class="menu_item_link" href="#page5">Клиенты</a>
-                  </li>
-                  <li class="menu_item">
-                      <a class="menu_item_link" href="#page6">Контакты</a>
-                  </li>
-              </ul>
-    
-          </nav>
-          <button class="bugrer-btn">
-            <span class="burger"></span>
-          </button>
-      </div>
-    </div>
-  </header>
-  <div class="container">
-            <section class="page_container page_one">
-                <div class="page_image image_map">
-                    <img src="src/images/page1/map.png" alt="map">
-                </div>
-              <div class="content page_one_content">
-                  <h1 class="name_sys">Инновационная логистическая <br>операционная система</h1>
-                  <div class="line"></div>
-                  <div class="name_sys2">Весь процесс логистики в рамках одного продукта</div>
-                  <a class="btn_download dop_margin" href="./assets/video/Architecture.mp4" download="" title="скачать LOGOS">Скачать пробную версию</a>
-              </div>
-            </section>
-            <section id="page2" class="page_container"> 
-              <div  class="content page_two_wrapper">
-                  <div class="page_two_content">
-                    <div class="video">
-                        <video poster = "src/images/page2/video.png" controls>
-                            <source src = "src/video/Architecture.mp4" type = "video/mp4">
-                            Ваш браузер не поддерживает видео тег.
-                        </video>
-                    </div>
-                    <div class="page2_text">
-                        <h2>
-                            <p class="colortext">logistics</p> operating system
-                        </h2>
-                        <p>
-                            Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
-                            Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.
-                            Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами.
-                          
-                        </p>
-                    </div>
-                  </div>
-                </div>
-            </section> 
-  </div>
+	<header class="header">
+		<div class="header_content">
+			<div class="header_logo">
+				<a href="#">
+					<img src="src/images/logo.png" alt="gSoft">
+				</a>
+			</div>
+			<div class="header_action">
+				<nav class="nav">
+					<ul class="nav_menu">
+						<li class="menu_item">
+							<a class="menu_item_link" href="#" data-href="">Главная</a>
+						</li>
+						<li class="menu_item">
+							<a class="menu_item_link" href="#page2" data-href="page2">Видео</a>
+						</li>
+						<li class="menu_item">
+							<a class="menu_item_link" href="#page3" data-href="page3">Преимущества</a>
+						</li>
+						<li class="menu_item">
+							<a class="menu_item_link" href="#page4" data-href="page4">Возможности</a>
+						</li>
+						<li class="menu_item">
+							<a class="menu_item_link" href="#page5" data-href="page5">Клиенты</a>
+						</li>
+						<li class="menu_item">
+							<a class="menu_item_link" href="#page6" data-href="page6">Контакты</a>
+						</li>
+					</ul>
+
+				</nav>
+				<button class="bugrer-btn">
+					<span class="burger"></span>
+				</button>
+			</div>
+		</div>
+	</header>
+	<div class="container">
+		<section class="screen page_container page_one">
+			<div class="page_image image_map">
+				<img src="src/images/page1/map.png" alt="map">
+			</div>
+			<div class="content page_one_content">
+				<h1 class="name_sys">Инновационная логистическая <br>операционная система</h1>
+				<div class="line"></div>
+				<div class="name_sys2">Весь процесс логистики в рамках одного продукта</div>
+				<a class="btn_download dop_margin" href="src/video/Architecture.mp4" download=""
+					title="скачать LOGOS">Скачать пробную версию</a>
+			</div>
+		</section>
+		<section id="page2" class="screen page_container">
+			<div class="content page_two_wrapper">
+				<div class="page_two_content">
+					<div class="video">
+						<video poster="src/images/page2/video.png" controls>
+							<source src="src/video/Architecture.mp4" type="video/mp4">
+							Ваш браузер не поддерживает видео тег.
+						</video>
+					</div>
+					<div class="page2_text">
+						<h2>
+							<p class="colortext">logistics</p> operating system
+						</h2>
+						<p>
+							Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
+							Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.
+							Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами.
+
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="page3" class="screen page_container three_bg">
+			<div class="content page_three_content">
+				<h2>
+					Ключевые преимущества
+				</h2>
+				<div class="second_part_three_content">
+					<div class="second_part_three_content_left_side">
+						<ul id="dots">
+							<li class="icon-work active">
+								<div class="element">
+									<div class="icon_element_container">
+										<div class="element_icon">
+											<img src="src/images/page3/icon-work.png" alt="иконка work">
+										</div>
+									</div>
+									<div>Собственная разработка</div>
+								</div>
+							</li>
+							<li>
+								<div class="element icon-trade">
+									<div class="icon_element_container">
+										<div class="element_icon">
+											<img src="src/images/page3/icon-trade.png" alt="иконка trade">
+										</div>
+									</div>
+									<div>Автоматический обмен</div>
+								</div>
+							</li>
+							<li>
+								<div class="element icon-target">
+									<div class="icon_element_container">
+										<div class="element_icon">
+											<img src="src/images/page3/target.png" alt="иконка target">
+										</div>
+									</div>
+									<div>Доработка под специфику</div>
+								</div>
+							</li>
+							<li>
+								<div class="element icon-secure">
+									<div class="icon_element_container">
+										<div class="element_icon">
+											<img src="src/images/page3/icon-secure.png" alt="иконка secure">
+										</div>
+									</div>
+									<div>Полная конфиденциальность</div>
+								</div>
+							</li>
+							<li>
+								<div class="element icon-product">
+									<div class="icon_element_container">
+										<div class="element_icon">
+											<img src="src/images/page3/icon-product.png" alt="иконка product">
+										</div>
+									</div>
+									<div>Интеграция с другими продуктами</div>
+								</div>
+							</li>
+							<li>
+								<div class="element icon-web">
+									<div class="icon_element_container">
+										<div class="element_icon">
+											<img src="src/images/page3/icon-web.png" alt="иконка web">
+										</div>
+									</div>
+									<div>Web - интерфейс</div>
+								</div>
+							</li>
+							<li>
+								<div class="element icon-sup">
+									<div class="icon_element_container">
+										<div class="element_icon">
+											<img src="src/images/page3/icon-sup.png" alt="иконка sup">
+										</div>
+									</div>
+									<div>Полноценная поддержка</div>
+								</div>
+							</li>
+							<li>
+								<div class="element icon-team">
+									<div class="icon_element_container">
+										<div class="element_icon">
+											<img src="src/images/page3/icon-team.png" alt="иконка team">
+										</div>
+									</div>
+									<div>Одновременная работа</div>
+								</div>
+							</li>
+							<li>
+								<div class="element icon-remote">
+									<div class="icon_element_container">
+										<div class="element_icon">
+											<img src="src/images/page3/icon-remote.png" alt="иконка remote">
+										</div>
+									</div>
+									<div>Удаленный доступ</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<!-- <div class="second_part_three_content_right_side">
+						<ul id="slider">
+							<li>
+								<h2>Собственная разработка</h2>
+								<p>Two households, both alike in dignity,
+									In fair Verona, where we lay our scene,
+									From ancient grudge break to new mutiny,
+									Where civil blood makes civil hands unclean.
+									From forth the fatal loins of these two foes
+									A pair of star-cross'd lovers take their life;
+									Whole misadventured piteous overthrows
+									Do with their death bury their parents' strife.
+									The fearful passage of their death-mark'd love,
+									And the continuance of their parents' rage,
+									Which, but their children's end, nought could remove,
+									Is now the two hours' traffic of our stage;
+									The which if you with patient ears attend,
+									What here shall miss, our toil shall strive to mend.
+								</p>
+							</li>
+							<li>
+								<h2>Собственная разработка2</h2>
+								<p>Собственная разработка за словесными горами в стране гласных и согласных живут рыбные тексты.
+									Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.
+									Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами.
+									Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот.
+									Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими безорфографичный образ
+									жизни.
+									Однажды одна маленькая строчка рыбного текста по имени Lorem ipsum решила выйти в большой мир
+									грамматики.
+									Великий Оксмокс предупреждал ее о злых запятых2
+								</p>
+							</li>
+							<li>
+								<h2>Собственная разработка3</h2>
+								<p>Собственная разработка за словесными горами в стране гласных и согласных живут рыбные тексты.
+									Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.
+									Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами.
+									Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот.
+									Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими безорфографичный образ
+									жизни.
+									Однажды одна маленькая строчка рыбного текста по имени Lorem ipsum решила выйти в большой мир
+									грамматики.
+									Великий Оксмокс предупреждал ее о злых запятых3
+								</p>
+							</li>
+							<li>
+								<h2>Собственная разработка4</h2>
+								<p>Собственная разработка за словесными горами в стране гласных и согласных живут рыбные тексты.
+									Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.
+									Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами.
+									Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот.
+									Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими безорфографичный образ
+									жизни.
+									Однажды одна маленькая строчка рыбного текста по имени Lorem ipsum решила выйти в большой мир
+									грамматики.
+									Великий Оксмокс предупреждал ее о злых запятых4
+								</p>
+							</li>
+							<li>
+								<h2>Собственная разработка5</h2>
+								<p>Собственная разработка за словесными горами в стране гласных и согласных живут рыбные тексты.
+									Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.
+									Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами.
+									Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот.
+									Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими безорфографичный образ
+									жизни.
+									Однажды одна маленькая строчка рыбного текста по имени Lorem ipsum решила выйти в большой мир
+									грамматики.
+									Великий Оксмокс предупреждал ее о злых запятых5
+								</p>
+							</li>
+							<li>
+								<h2>Собственная разработка6</h2>
+								<p>Собственная разработка за словесными горами в стране гласных и согласных живут рыбные тексты.
+									Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.
+									Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами.
+									Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот.
+									Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими безорфографичный образ
+									жизни.
+									Однажды одна маленькая строчка рыбного текста по имени Lorem ipsum решила выйти в большой мир
+									грамматики.
+									Великий Оксмокс предупреждал ее о злых запятых12
+								</p>
+							</li>
+							<li>
+								<h2>Собственная разработка7</h2>
+								<p>Собственная разработка за словесными горами в стране гласных и согласных живут рыбные тексты.
+									Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.
+									Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами.
+									Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот.
+									Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими безорфографичный образ
+									жизни.
+									Однажды одна маленькая строчка рыбного текста по имени Lorem ipsum решила выйти в большой мир
+									грамматики.
+									Великий Оксмокс предупреждал ее о злых запятых12
+								</p>
+							</li>
+							<li>
+								<h2>Собственная разработка8</h2>
+								<p>Собственная разработка за словесными горами в стране гласных и согласных живут рыбные тексты.
+									Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.
+									Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами.
+									Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот.
+									Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими безорфографичный образ
+									жизни.
+									Однажды одна маленькая строчка рыбного текста по имени Lorem ipsum решила выйти в большой мир
+									грамматики.
+									Великий Оксмокс предупреждал ее о злых запятых12
+								</p>
+							</li>
+							<li>
+								<h2>Собственная разработка9</h2>
+								<p>Собственная разработка за словесными горами в стране гласных и согласных живут рыбные тексты.
+									Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.
+									Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами.
+									Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот.
+									Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими безорфографичный образ
+									жизни.
+									Однажды одна маленькая строчка рыбного текста по имени Lorem ipsum решила выйти в большой мир
+									грамматики.
+									Великий Оксмокс предупреждал ее о злых запятых12
+								</p>
+							</li>
+						</ul>
+
+					</div> -->
+				</div>
+			</div>
+		</section>
+		<section id="page4" class="screen page_container">
+			<div class="content page_four_content">
+				<div class="content_wrapper">
+					<h2 class="page_title">Возможности</h2>
+					<p class="page_description">Мы предоставляем услуги по полной атоматизации деятельности Вашей компании</p>
+					<div class="services_wrapper">
+						<div class="services">
+							<div class="service_item">
+								<div class="icon_container">
+									<div class="item_icon">
+										<img src="src/images/page4/crm.png" alt="иконка CRM">
+									</div>
+								</div>
+								<p class="item_description">
+									<strong>CRM</strong> - система учитывает каждое обращение в компанию и подсказывает когда необходимо
+									позвонить,
+									отправить документы или организовать встречу.
+									Возможность размещения запросов на просчет позволяет оперативно получать информацию от смежных отделов
+									и формировать коммерческое предложение для клиента.
+								</p>
+							</div>
+							<div class="service_item">
+								<div class="icon_container">
+									<div class="item_icon">
+										<img src="src/images/page4/order.png" alt="иконка Заказы">
+									</div>
+								</div>
+								<p class="item_description">
+									<strong>Заказы</strong> - система позволяет вести учет состоявшихся заказов на поставку с указанием
+									логистической,
+									финансовой и документальной схем работы, учитывать и выставлять счета, контролировать оплаты.
+								</p>
+							</div>
+							<div class="service_item">
+								<div class="icon_container ">
+									<div class="item_icon item_icon_blue">
+										<img src="src/images/page4/cargo.png" alt="иконка Грузы">
+									</div>
+								</div>
+								<p class="item_description">
+									<strong>Грузы</strong> - система позволяет отслеживать движение грузовых единиц (контейнеров, вагонов,
+									машин итп) в рамках единого экрана.
+								</p>
+							</div>
+							<div class="service_item">
+								<div class="icon_container">
+									<div class="item_icon item_icon_blue">
+										<img src="src/images/page4/sea.png" alt="иконка Морские">
+									</div>
+								</div>
+								<p class="item_description">
+									<strong>Морские</strong> - система позволяет отслеживать букинги и коносаменты в рамках отдельного
+									журнала.
+								</p>
+							</div>
+							<div class="service_item">
+								<div class="icon_container padding_left">
+									<div class="item_icon item_icon_light_blue">
+										<img src="src/images/page4/forwarding.png" alt="иконка Экспедирование">
+									</div>
+								</div>
+								<p class="item_description">
+									<strong>Экспедирование</strong> - система позволяет вносить информацию по релизами, получению
+									коносаментов, досмотрам и осмотрам в рамках процедуры экспедирования в порту.
+								</p>
+							</div>
+							<div class="service_item">
+								<div class="icon_container padding_left">
+									<div class="item_icon ">
+										<img src="src/images/page4/railway.png" alt="иконка Железнодорожные">
+									</div>
+								</div>
+								<p class="item_description">
+									<strong>Железнодорожные</strong> - система позволяет отслеживать железнодорожные перевозки в рамках
+									отдельного журнала.
+								</p>
+							</div>
+							<div class="service_item">
+								<div class="icon_container padding_left">
+									<div class="item_icon ">
+										<img src="src/images/page4/air.png" alt="иконка Авиационные">
+									</div>
+								</div>
+								<p class="item_description">
+									<strong>Авиационные</strong> - система позволяет отслеживать авиационные перевозки в рамках отдельного
+									журнала.
+								</p>
+							</div>
+							<div class="service_item">
+								<div class="icon_container padding_left">
+									<div class="item_icon ">
+										<img src="src/images/page4/auto.png" alt="иконка Автомобильные">
+									</div>
+								</div>
+								<p class="item_description">
+									<strong>Автомобильные</strong> - система позволяет отслеживать международные и внутрироссийские
+									автомобильные перевозки в рамках отдельного журнала.
+								</p>
+							</div>
+							<div class="service_item">
+								<div class="icon_container">
+									<div class="item_icon item_icon_blue ">
+										<img src="src/images/page4/modular_cargo.png" alt="иконка Сборные грузы">
+									</div>
+								</div>
+								<p class="item_description">
+									<strong>Сборные грузы</strong> - система позволяет выполнять операции по консолидации и учету сборных
+									грузов.
+								</p>
+							</div>
+							<div class="service_item">
+								<div class="icon_container">
+									<div class="item_icon item_icon_blue">
+										<img src="src/images/page4/document.png" alt="иконка Документооборот">
+									</div>
+								</div>
+								<p class="item_description">
+									<strong>Документооборот</strong> - система позволяет выполнять операции по согласованию документов в
+									рамках структурных подразделений компании.
+								</p>
+							</div>
+							<div class="service_item">
+								<div class="icon_container">
+									<div class="item_icon item_icon_blue">
+										<img src="src/images/page4/declaration.png" alt="иконка Декларирование">
+									</div>
+								</div>
+								<p class="item_description">
+									<strong>Декларирование</strong> - система позволяет загружать таможенные и транзитные декларации
+									(общая информация, товары, гр44, платежи) из систем электронного декларирования. В системе ведется
+									баланс таможенных платежей и контрактов.
+								</p>
+							</div>
+							<div class="service_item">
+								<div class="icon_container">
+									<div class="item_icon item_icon_light_blue ">
+										<img src="src/images/page4/analitic.png" alt="иконка Аналитика">
+									</div>
+								</div>
+								<p class="item_description">
+									<strong>Аналитика</strong> - система позволяет формировать отчеты по финансовым, количественным и
+									качественным показателям.
+									В программе присутствует ряд предустановленных отчетов, так же возможно создание новых собственных
+									отчетов
+									по средством встроенного дизайнера отчетов.
+								</p>
+							</div>
+							<div class="service_item">
+								<div class="icon_container padding_left">
+									<div class="item_icon ">
+										<img src="src/images/page4/chat.png" alt="иконка Чат">
+									</div>
+								</div>
+								<p class="item_description">
+									<strong>Чат</strong> - в системе через встроенный чат можно писать сообщения и отправлять документы
+									внутренним и внешним пользователям,
+									вести совместное общение через группы в привязке к объектам системы.
+								</p>
+							</div>
+							<div class="service_item">
+								<div class="icon_container padding_left">
+									<div class="item_icon">
+										<img src="src/images/page4/task.png" alt="иконка Задачи">
+									</div>
+								</div>
+								<p class="item_description">
+									<strong>Задачи</strong> - в системе можно ставить в ручном и автоматическом режиме задачи в привязке к
+									объектам системы на отдел
+									или конкретных сотрудников, ставить наблюдателя, контролировать строки выполнения и общаться с
+									участниками задачи через комментарии.
+								</p>
+							</div>
+							<div class="service_item">
+								<div class="icon_container padding_left">
+									<div class="item_icon">
+										<img src="src/images/page4/calendar.png" alt="иконка Календарь">
+									</div>
+								</div>
+								<p class="item_description">
+									<strong>Календарь</strong> - все события из CRM, логистики, задачам можно вывести в екалендарь.
+								</p>
+							</div>
+							<div class="service_item">
+								<div class="icon_container padding_left">
+									<div class="item_icon item_icon_light_blue">
+										<img src="src/images/page4/guide.png" alt="иконка Справочники">
+									</div>
+								</div>
+								<p class="item_description">
+									<strong>Справочники</strong> - в системе возможна работа с журналами справочников.
+								</p>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+		<section id="page5" class="screen page_container page_clients">
+			<div id="particles-js-page5"></div>
+			<div class="content page_clients_content">
+				<div class="content_wrapper">
+					<h2 class="page_title">Клиенты</h2>
+					<div class="client_circles">
+						<div class="circle circle_a client_info_h wow fadeInUpBig" data-wow-duration="1.5s" data-wow-offset="300"
+							data-wow-delay="0.1s">
+							<p>Торговые сети</p>
+						</div>
+						<div class="circle circle_s client_info_h wow fadeInUpBig" data-wow-duration="1.5s" data-wow-offset="300"
+							data-wow-delay="0.3s">
+							<p>Таможенные <br>представители</p>
+						</div>
+						<div class="circle circle_l circle_main wow fadeInUpBig" data-wow-duration="1.5s" data-wow-offset="300"
+							data-wow-delay="0.6s">
+							Экспедиторские <br>компании
+						</div>
+						<div class="circle circle_s client_info_h wow fadeInUpBig" data-wow-duration="1.5s" data-wow-offset="300"
+							data-wow-delay="0.9s">
+							<p>3PL <br>операторы</p>
+						</div>
+						<div class="circle circle_m client_info_h wow fadeInUpBig" data-wow-duration="1.5s" data-wow-offset="300"
+							data-wow-delay="1.2s">
+							<p>Автотранспортные <br>компании</p>
+						</div>
+						<div class="client_desc client_desc_left">
+							<div class="client_info client_info_left">
+								<div class="client_info_icon">
+									<img src="src/images/page5/icon.png" alt="icon">
+								</div>
+								<p class="client_info_text">
+									Система учитывает каждое обращение в компанию и подсказывает когда необходимо позвонить, отправить
+									документы или организовать встречу.
+								</p>
+							</div>
+							<div class="client_info client_info_left">
+								<div class="client_info_icon">
+									<img src="src/images/page5/icon.png" alt="icon">
+								</div>
+								<p class="client_info_text">
+									Система учитывает каждое обращение в компанию и подсказывает когда необходимо позвонить, отправить
+									документы или организовать встречу.
+								</p>
+							</div>
+							<div class="client_info client_info_left">
+								<div class="client_info_icon">
+									<img src="src/images/page5/icon.png" alt="icon">
+								</div>
+								<p class="client_info_text">
+									Система учитывает каждое обращение в компанию и подсказывает когда необходимо позвонить, отправить
+									документы или организовать встречу.
+								</p>
+							</div>
+						</div>
+						<div class="client_desc client_desc_right">
+							<div class="client_info client_info_right">
+								<div class="client_info_icon">
+									<img src="src/images/page5/icon.png" alt="icon">
+								</div>
+								<p class="client_info_text">
+									Система учитывает каждое обращение в компанию и подсказывает когда необходимо позвонить, отправить
+									документы или организовать встречу.
+								</p>
+							</div>
+							<div class="client_info client_info_right">
+								<div class="client_info_icon">
+									<img src="src/images/page5/icon.png" alt="icon">
+								</div>
+								<p class="client_info_text">
+									Система учитывает каждое обращение в компанию и подсказывает когда необходимо позвонить, отправить
+									документы или организовать встречу.
+								</p>
+							</div>
+							<div class="client_info client_info_right">
+								<div class="client_info_icon">
+									<img src="src/images/page5/icon.png" alt="icon">
+								</div>
+								<p class="client_info_text">
+									Система учитывает каждое обращение в компанию и подсказывает когда необходимо позвонить, отправить
+									документы или организовать встречу.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="page6" class="screen page_container page_footer">
+			<div id="particles-js-page6"></div>
+			<div class="content page_footer_content">
+				<div class="contact_title">
+					<h2>Контакты</h2>
+				</div>
+				<div class="contact-items">
+					<div class="contact-item contact-item_1">
+						<div class="location">
+							<p>г. Москва,<br>ул. Нижегородская, д.280</p>
+						</div>
+						<div class="location-icon"><img src="src/images/page6/icon-location.png" alt="icon-location"></div>
+					</div>
+					<div class="contact-item contact-item_2">
+						<div class="soc_net">
+							<a href=""><img src="src/images/page6/vk.png" alt="vk"></a>
+						</div>
+						<div class="soc_net">
+							<a href=""><img src="src/images/page6/face.png" alt="faceb"></a>
+						</div>
+						<div class="soc_net">
+							<a href=""><img src="src/images/page6/insta.png" alt="instag"></a>
+						</div>
+						<div class="soc_net">
+							<a href=""><img src="src/images/page6/odnoklasniki.png" alt="odnoklassniki"></a>
+						</div>
+					</div>
+					<div class="contact-item contact-item_3">
+						<div class="phone">+7 (495) 331-40-50</div>
+						<div class="phone-icon"><img src="src/images/page6/icon-phone.png" alt="icon-phone"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
 </body>
 </html>
